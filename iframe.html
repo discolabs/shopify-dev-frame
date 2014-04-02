@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopify Embedded App Development Frame</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    </head>
+    <body id="iframe">
+        <h1>Shopify Development Frame</h1>
+        <p>
+            Enter a URL in the textbox below and click "Go" to open your development app in the frame.
+        </p>
+
+        <form method="GET" onsubmit="this.action = document.getElementById('url').value;">
+            <input type="url" id="url" size="40" placeholder="http://localhost:8000" autofocus="autofocus" autocomplete="off" />
+            <input type="submit" class="btn btn-primary" value="Go &rarr;" />
+        </form>
+
+        <p class="text-muted text-small">
+            Shopify Development Frame brought to you by <a href="http://discolabs.com" class="text-muted" target="_blank">Disco Labs</a>.
+        </p>
+    </body>
+</html>

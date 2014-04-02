@@ -22,11 +22,8 @@
         </header>
 
         <!-- Content iFrame -->
-        <iframe id="content"></iframe>
-
-        <script type="text/javascript">
-            var url = location.hash ? location.hash.substr(1) : '';
-            document.getElementById('content').src = url;
-        </script>
+        <section id="content-wrapper">
+            <iframe id="content" src="iframe.html"></iframe>
+        </section>
     </body>
 </html>

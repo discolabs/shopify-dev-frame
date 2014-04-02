@@ -1,0 +1,26 @@
+//
+// Forms
+// --------------------------------------------------
+
+form {
+  margin: 40px 0;
+}
+
+input[type="text"],
+input[type="url"], {
+  vertical-align: top;
+  height: 32px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  margin: 0;
+  border: 1px solid #ccc;
+  display: inline-block;
+  color: #222;
+  border-radius: 4px;
+
+  &:focus, &.focus {
+    border: 1px solid #479ccf;
+    outline: 0;
+  }
+}
