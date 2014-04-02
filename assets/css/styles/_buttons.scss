@@ -1,0 +1,54 @@
+//
+// Buttons
+// --------------------------------------------------
+
+// Base button
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 9px;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Default button
+.btn, .btn-default {
+  background-color: #fcfcfc;
+  border: 1px solid #e3e3e3;
+  color: #479ccf;
+
+  &:hover, &:focus, &.focus {
+    background-color: #efefef;
+    border-color: #d6d6d6;
+    color: #479ccf;
+  }
+}
+
+// Primary button
+.btn-primary {
+  background-color: #479ccf;
+  border: 1px solid #2f82b4;
+  color: #fff;
+
+  &:hover, &:focus, &.focus {
+    background-color: #3491c8;
+    border-color: #2a74a0;
+    color: #fff;
+  }
+}

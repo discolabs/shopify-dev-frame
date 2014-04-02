@@ -6,8 +6,22 @@
         <script type="text/javascript" src="assets/js/shopifyapp.js"></script>
     </head>
     <body>
-        <div id="sidebar"></div>
-        <div id="header"></div>
+        <!-- Left Sidebar -->
+        <aside id="sidebar"></aside>
+
+        <!-- Header Bar -->
+        <header id="header">
+            <h1 id="header-title">
+                <img id="header-title-icon" src="assets/img/app-default-icon.png" width="20" height="20" />
+                Products
+            </h1>
+            <div id="header-actions">
+                <button class="btn">Manage inventory</button>
+                <button class="btn btn-primary">Add a product</button>
+            </div>
+        </header>
+
+        <!-- Content iFrame -->
         <iframe id="content"></iframe>
 
         <script type="text/javascript">
