@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopify Embedded App Development Frame</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+        <script type="text/javascript" src="assets/js/shopifyapp.js"></script>
+    </head>
+    <body>
+        <div id="sidebar"></div>
+        <div id="header"></div>
+        <iframe id="content"></iframe>
+
+        <script type="text/javascript">
+            var url = location.hash ? location.hash.substr(1) : '';
+            document.getElementById('content').src = url;
+        </script>
+    </body>
+</html>
