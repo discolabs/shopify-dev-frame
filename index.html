@@ -3,7 +3,7 @@
     <head>
         <title>Shopify Embedded App Development Frame</title>
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
-        <script type="text/javascript" src="assets/js/shopifyapp.js"></script>
+        <script type="text/javascript" src="assets/js/frameapp.js"></script>
     </head>
     <body>
         <!-- Left Sidebar -->
@@ -24,5 +24,13 @@
         <section id="content-wrapper">
             <iframe id="content" src="iframe.html"></iframe>
         </section>
+
+        <!-- Setup FrameApp. -->
+        <script type="text/javascript">
+            FrameApp.init({
+                debug: true,
+                iframe: document.getElementById('content')
+            });
+        </script>
     </body>
 </html>

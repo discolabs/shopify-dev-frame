@@ -3,6 +3,18 @@
     <head>
         <title>Shopify Embedded App Development Frame</title>
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+        <script type="text/javascript" src="assets/js/shopifyapp.js"></script>
+        <script type="text/javascript">
+            ShopifyApp.init({
+                apiKey:         '00000000000000000000000000000000',
+                shopOrigin:     '*',
+                debug:          true,
+                forceRedirect:  false
+            });
+            ShopifyApp.ready(function() {
+
+            });
+        </script>
     </head>
     <body id="iframe">
         <h1>Shopify Development Frame</h1>
