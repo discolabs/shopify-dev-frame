@@ -22,7 +22,7 @@
             Enter a URL in the textbox below and click "Go" to open your development app in the frame.
         </p>
 
-        <form method="GET" onsubmit="this.action = document.getElementById('url').value;">
+        <form id="form" method="GET">
             <input type="url" id="url" size="40" placeholder="http://localhost:8000" autofocus="autofocus" autocomplete="off" />
             <input type="submit" class="btn btn-primary" value="Go &rarr;" />
         </form>
@@ -30,5 +30,12 @@
         <p class="text-muted text-small">
             Shopify Development Frame brought to you by <a href="http://discolabs.com" class="text-muted" target="_blank">Disco Labs</a>.
         </p>
+
+        <div id="recent" style="display: none;">
+          <p class="text-small text-muted">&middot;</p>
+          <div id="list"></div>
+          <p class="text-small"><a href="#" id="clear" class="text-muted">Clear Recent</a></p>
+        </div>
+        <script type="text/javascript" src="assets/js/iframe.js"></script>
     </body>
 </html>
